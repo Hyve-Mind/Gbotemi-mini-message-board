@@ -1,0 +1,14 @@
+html
+  head
+    style
+      include form.css
+  body
+   h1 Mini Message Board
+    a(href='/new')
+      button Submit a post
+each item in messages
+  div.each-message
+   li= item.userName
+   li= item.userMessage
+  //-  li= item.added
+  
